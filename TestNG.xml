@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"></listener>
+    </listeners>
+    <test name="AllTests">
+        <classes>
+            <class name="Courses.CourseCardUITests"/>
+            <class name="Courses.CourseDetailsTest"/>
+            <class name="Login.LoginWithInvalidCredentialsTest"/>
+            <class name="Login.EndToEndTest"/>
+            <class name="Login.LoginWithEmptyFieldsTest"/>
+            <class name="Registration.RegisterWithAnEmptyUsernameFieldTest"/>
+            <class name="Registration.VerifyRegistrationPage"/>
+            <class name="SearchIcon.SearchWithValidKeywordTest"/>
+            <class name="SocialLinks.FacebookLinkTest"/>
+            <class name="SocialLinks.InstagramLinkTest"/>
+            <class name="SocialLinks.LinkedInLinkTest"/>
+        </classes>
+    </test>
+</suite>
